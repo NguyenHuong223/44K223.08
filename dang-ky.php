@@ -7,13 +7,13 @@
  */
 
 
-if(flatsome_option('pages_template') != 'default') {
+ if(flatsome_option('pages_template') != 'default') {
 	
 	// Get default template from theme options.
 	get_template_part('page', flatsome_option('pages_template'));
 	return;
 
-} else {
+} else{
 
 get_header();
 do_action( 'flatsome_before_page' ); ?>
@@ -21,6 +21,9 @@ do_action( 'flatsome_before_page' ); ?>
 	<div class="row row-main">
 		<div class="large-12 col">
 			<div class="col-inner">
+<p><label><font color="##BB0000"> <font size="8px"> ĐĂNG KÝ THÀNH VIÊN MỚI </font></p></label>
+<p><label>*Nếu bạn chưa có tài khoản vui lòng điền những thông tin dưới đây để tạo tài khoản mới.</p></label>
+<font><font color="##FF0000"> <font size="8px"> </font>
 <div class="dang-ky">
 <?php if(is_user_logged_in()) { $user_id = get_current_user_id();$current_user = wp_get_current_user();$profile_url = get_author_posts_url($user_id);$edit_profile_url = get_edit_profile_url($user_id); ?>
 <div class="da-dang-nhap">
@@ -99,7 +102,8 @@ endif;
 <p><label>Nhập lại mật khẩu</label></p>
 <p><input type="password" value="" name="pwd2" id="pwd2" /></p>
 <div class="message"><p><?php if($sucess != "") { echo $sucess; } ?> <?php if($err != "") { echo $err; } ?></p></div>
-<button type="submit" name="btnregister" id="nut-dk" class="button" >Đăng ký</button>
+<button type="submit" name="btnregister" id="nut-dk" class="button" >
+Đăng ký </button>
 <input type="hidden" name="task" value="register" />
 </form>
 <?php } ?>
@@ -126,3 +130,4 @@ get_footer();
 #username, #email, #pwd1, #pwd2, #last_name, #first_name{width:100%}
 #nut-dk{background:#444;color:#fff;border:none;padding:10px}
 </style>
+
