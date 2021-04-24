@@ -30,7 +30,7 @@ do_action( 'flatsome_before_page' ); ?>
 	<div class="dang-nhap">
 <?php if(is_user_logged_in()) { $user_id = get_current_user_id();$current_user = wp_get_current_user();$profile_url = get_author_posts_url($user_id);$edit_profile_url = get_edit_profile_url($user_id); ?>
 <div class="da-dang-nhap">
-Bạn đã đăng nhập với tài khoản <a href="<?php echo $profile_url ?>"><?php echo $current_user->display_name; ?></a> Hãy truy cập <a href="/wp-admin">Quản trị viên</a> hoặc <a href="<?php echo esc_url(wp_logout_url($current_url)); ?>">Đăng xuất tài khoản</a>
+Bạn đã đăng nhập với tài khoản <a href="<?php echo $profile_url ?>"><?php echo $current_user->display_name; ?></a> Hãy truy cập <a href="/wp-admin"><font color="##000099">Quản trị viên </font></a> hoặc <a href="<?php echo esc_url(wp_logout_url($current_url)); ?>"><font color="##000099">Đăng xuất tài khoản </font></a>
 </div>
 <?php } else { ?>
 
