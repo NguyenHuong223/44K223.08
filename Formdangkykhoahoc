@@ -1,0 +1,111 @@
+
+<html>
+<head>
+    <title> Form đăng ký khóa học </title>
+<head>
+<body>
+    <form action="" method="post">
+    <table width="350" border="2" cellpading="5" align="center">
+       <tr>
+          <th colspan="2">ĐĂNG KÝ KHÓA HỌC</th>
+       </tr>
+       
+       <tr>
+          <td>Tên của bạn</td>
+          <td>
+             <input type="text" name="fullname" size="30" placeholder="Nhập tên của bạn">
+          </td>
+       </tr>
+       
+       <tr>
+          <td>Địa chỉ email</td>
+          <td>
+             <input type="text" name="email" size="30" placeholder="Nhập email của bạn">
+          </td>
+        </tr>
+        
+        <td>
+          <td>Số điện thoại</td>
+          <td>
+             <input type="number" name="phone" size="30" placeholder="Nhập số điện thoại của bạn">
+          </td>
+       </tr>
+       
+       <tr>
+          <td>Giới tính</td>
+          <td>
+             <label>
+             <input type="radio" name="gioitinh" id="nam"> Nam
+             </label>
+             
+             <label>
+             <input type="radio" name="gioitinh" id="nu"> Nữ
+             </label>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Chọn khóa học</td>
+          <td>
+             <select name="khoahoc">
+                 <option value="coban">Cơ bản</option>
+                 <option value="trungcap">Trung cấp</option>
+                 <option value="caocap">Cao cấp</option>
+                 <option value="luyenthicaptoc">Luyện thi cấp tốc</option>
+             </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Thời gian tham gia khóa học</td>
+          <td>
+             <select name="thoigian">
+                 <option value="thu2">Thứ 2</option>
+                 <option value="thu3">Thứ 3</option>
+                 <option value="thu4">Thứ 4</option>
+                 <option value="thu5">Thứ 5</option>
+                 <option value="thu6">Thứ 6</option>
+                 <option value="thu7">Thứ 7</option>
+                 <option value="chunhat">Chủ nhật</option>
+             </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Khung giờ tham gia khóa học</td>
+          <td>
+             <select name="khunggio">
+                 <option value="sang">Sáng: 8h-10h</option>
+                 <option value="chieu">Chiều: 14h-16h</option>
+                 <option value="toi">Tối: 19h-21h</option>
+             </select>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Mong muốn khi tham gia khóa học</td>
+          <td>
+              <textarea col="20">
+              </textarea>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Xác thực thanh toán</td>
+          <td>
+             <input type="file" name="hinhanh">
+          </td>
+        </tr>
+        
+        <tr>
+          <td> colspan="2" align="center">
+             <input type="reset" name="reset" value="Reset"> &nbsp;&nbsp;
+             <input type="submit" name="guidi" value="Gửi đi">
+          </td>
+        </tr>
+        
+    </table>
+        </form>
+</body>
+</html>
+    
